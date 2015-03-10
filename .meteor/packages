@@ -8,3 +8,7 @@ meteor-platform
 autopublish
 insecure
 pcjpcj2:ratchet
+ecwyne:polymer-elements
+accounts-ui
+accounts-password
+service-configuration

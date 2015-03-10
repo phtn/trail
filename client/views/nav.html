@@ -1,5 +1,18 @@
 <template name="nav">
 	<header class="bar bar-nav">
-		<h2 class="title">Trail Finder</h2>
+		<h2 class="title" id="title"><strong>A</strong>lphinder <span class="icon icon-pages" id="title-icon"></span></h2>
+		<span class="login pull-left">
+			{{> loginButtons}}
+			{{#if currentUser}}
+		        {{currentUser.profile.login}}
+		    {{/if}}
+		</span>
 	</header>
+
+	  
+
+	  {{> login}}
+
+	  
+
 </template>
