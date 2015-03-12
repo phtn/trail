@@ -1,18 +1,8 @@
 <template name="nav">
 	<header class="bar bar-nav">
-		<h2 class="title" id="title"><strong>A</strong>lphinder <span class="icon icon-pages" id="title-icon"></span></h2>
-		<span class="login pull-left">
-			{{> loginButtons}}
-			{{#if currentUser}}
-		        {{currentUser.profile.login}}
-		    {{/if}}
-		</span>
+	<a href="/">
+		<h2 class="title" id="title">ALPHA<strong> <span>&</span> </strong>OMEGA</h2>
+	</a>
+	<a href="/login" id="person" class="login icon icon-person pull-right"></a>
 	</header>
-
-	  
-
-	  {{> login}}
-
-	  
-
 </template>

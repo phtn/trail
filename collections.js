@@ -1,0 +1,1 @@
+Location = new Mongo.Collection('location');

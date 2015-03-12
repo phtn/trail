@@ -1,6 +1,19 @@
 
-span#title-icon {
-	color: #4285f4;
-	height: 10px;
-	width: auto;
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+h2#title {
+	color: #666;
+}
+h2 span {
+	color: #333;
+}
+h2#title-thin {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+#person {
+	color: #666;
 }
