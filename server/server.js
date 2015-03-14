@@ -1,8 +1,8 @@
 Places = new Mongo.Collection('places')
-
+Messages = new Mongo.Collection('messages');
 Meteor.methods({getPlaces: function (){
 		var results = HTTP.call("GET", "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&key=AIzaSyDNknKfUx70tmTXXAYKeBQcUewPhvjUbmI");
-		console.log(results);
+		//console.log(results);
 	}
 });
 
@@ -29,3 +29,13 @@ https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDNknKfUx7
 
 47.4398580,-122.1163851
 */		
+if(Messages.find().count() == 0) {
+	var messages = [
+		{name: 'John'},
+		{name: 'Mary'}
+	];
+
+	for(var i=0; i<message.length; i++){
+		Messages.insert(messages[i]);
+	}
+}

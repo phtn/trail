@@ -1,7 +1,13 @@
+
+
 var loc = navigator.geolocation.getCurrentPosition(function(position){
-    var lat = position.coords.latitude,
-        lon = position.coords.longitude,
-        
+    var coords = {
+        lat: position.coords.latitude,
+        lon: position.coords.longitude
+    }
+for(var i=0; i<coords.length; i++){
+    Coordinates.insert(coords[i]);
+}
         request = {
             location: point,
             radius: '500',
@@ -17,9 +23,16 @@ var loc = navigator.geolocation.getCurrentPosition(function(position){
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
           var place = results[i];
-          console.log(results[i]);
+          //console.log(results[i]);
         }
       }
   }
 });
-Meteor.call('getPlaces');
+//Meteor.call('getPlaces');
+
+Template.messages.helpers({
+    messages: function(){
+        return messages.find();
+    }
+});
+

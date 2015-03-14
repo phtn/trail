@@ -15,3 +15,4 @@ jquery
 iron:router
 http
 mdg:geolocation
+underscore
