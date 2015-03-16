@@ -1,0 +1,19 @@
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#text {
+	margin-top: 2px;
+    border-style: none;
+    background-color: transparent;
+    font-family: 'Roboto';
+}
+#text-icon {
+    padding-left: 20px;
+    color: #999;
+}
+#submit-icon {
+	margin-right: 10px;
+	color: #4285f4;
+	display: none;
+}

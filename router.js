@@ -3,16 +3,21 @@ Router.configure({
 	layoutTemplate: 'layout'
 })
 
-Router.route('/', function () {
-  // render the Home template with a custom data context
-  this.render('messages',{data: {name: function(){
-  	return Messages.find();
-  }}});
-});
+Router.map(function () {
+  	
+  	this.route('messages', {
+	  	path: '/',
+	  	data: function (){
+	  		return Meteor.subscribe('ins');
+	  		}
+  		});
 
-// when you navigate to "/one" automatically render the template named "One".
-Router.route('/subject', function () {
-	this.render('Subject', { data: {title: 'Poo Poo Trail'}});
+  	this.route('subject', { 
+		path: '/subject',
+		data: {title: 'Poo Poo Trail'}
+	});
+	this.route('login', {
+		path: '/login'
+	});
+
 });
-// when you navigate to "/two" automatically render the template named "Two".
-Router.route('/login');

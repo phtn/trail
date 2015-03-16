@@ -1,0 +1,9 @@
+#image {
+	border-radius: 25px;
+}
+.media-body {
+	font-family: 'Roboto', sans-serif;
+	color: #4285f4;
+	padding-right: 0px;
+	margin-right: 0px;
+}
